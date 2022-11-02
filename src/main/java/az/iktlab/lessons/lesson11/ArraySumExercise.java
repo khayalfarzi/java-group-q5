@@ -1,9 +1,10 @@
 package az.iktlab.lessons.lesson11;
 
+import java.util.stream.IntStream;
+
 public class ArraySumExercise {
 
     public static int getSum(int[] arr) {
-
-        return 0;
+        return IntStream.of(arr).sum();
     }
 }
