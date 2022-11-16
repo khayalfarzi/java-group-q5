@@ -14,7 +14,7 @@ public class WarmUpTest {
     public void findMajorityElementTest(){
         Assert.assertEquals(1, findMajorityElement(new int[]{1, 2, 3, 1, 1, 1, 1, 1}));
         Assert.assertEquals(8, findMajorityElement(new int[]{2, 5, 8, 4, 8, 8, 8, 4, 8, 8, 4, 8, 5, 8, 8}));
-        Assert.assertEquals(1, findMajorityElement(new int[]{3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, 9, 5}));
+        Assert.assertEquals(3, findMajorityElement(new int[]{3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, 9, 5}));
     }
 
     @Test
