@@ -1,4 +1,4 @@
-package az.iktlab.lessons.lesson13;
+package az.iktlab.lessons.lesson13_14;
 
 public class Employee extends Humann {
     private double salary;

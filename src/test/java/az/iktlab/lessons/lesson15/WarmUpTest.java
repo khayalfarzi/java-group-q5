@@ -1,12 +1,12 @@
-package az.iktlab.lessons.lesson14;
+package az.iktlab.lessons.lesson15;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
 
-import static az.iktlab.lessons.lesson14.WarmUp.findClosestNumbers;
-import static az.iktlab.lessons.lesson14.WarmUp.findMajorityElement;
+import static az.iktlab.lessons.lesson15.WarmUp.findClosestNumbers;
+import static az.iktlab.lessons.lesson15.WarmUp.findMajorityElement;
 
 public class WarmUpTest {
 

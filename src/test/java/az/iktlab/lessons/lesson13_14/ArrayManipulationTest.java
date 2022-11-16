@@ -1,9 +1,9 @@
-package az.iktlab.lessons.lesson13;
+package az.iktlab.lessons.lesson13_14;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import static az.iktlab.lessons.lesson13.ArrayManipulation.findSecondMaxNumber;
+import static az.iktlab.lessons.lesson13_14.ArrayManipulation.findSecondMaxNumber;
 
 public class ArrayManipulationTest {
 
