@@ -12,7 +12,6 @@ public class ArrayManipulationTest {
 
     @Test
     public void findSecondMaxNumberTest() {
-
         List<Integer> arr = new ArrayList<>();
         arr.add(1);
         arr.add(2);
