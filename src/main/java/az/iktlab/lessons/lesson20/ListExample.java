@@ -3,13 +3,18 @@ package az.iktlab.lessons.lesson20;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class ListExample {
 
-    public static void main(String[] args) {
-        // todo: call scanner
+    private static final Scanner sc = new Scanner(System.in);
 
-        int i = 0, j = 0;
+    public static void main(String[] args) {
+
+        System.out.print("Enter the indexes: ");
+        String input = sc.nextLine();
+        int i = Integer.parseInt(input.split(",")[0]);
+        int j = Integer.parseInt(input.split(",")[1]);
 
         showElementByIndexes(i, j);
     }
@@ -28,6 +33,16 @@ public class ListExample {
         arr.add(List.of());
         arr.add(List.of(20, 22, 33));
 
-        //todo: Complete code snip
+        if (arr.size() < i) {
+            System.out.println("ERROR");
+            return;
+        }
+
+        if (arr.get(i-1).size() < j) {
+            System.out.println("ERROR");
+            return;
+        }
+
+        System.out.println(arr.get(i-1).get(j-1));
     }
 }
