@@ -19,9 +19,10 @@ public class LambdaExample {
         System.out.println(combinedLists);
     }
 
-    private static List<String> combineLists(){
-       return Stream.of(colors1, colors2)
+    private static List<String> combineLists() {
+        return Stream.of(colors1, colors2)
                 .flatMap(Collection::stream)
+                .distinct()
                 .collect(Collectors.toList());
     }
 }

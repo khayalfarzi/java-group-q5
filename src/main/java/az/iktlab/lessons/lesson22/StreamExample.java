@@ -1,7 +1,5 @@
 package az.iktlab.lessons.lesson22;
 
-import org.graalvm.compiler.nodes.calc.IntegerDivRemNode;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
