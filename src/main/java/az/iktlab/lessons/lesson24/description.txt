@@ -1,0 +1,12 @@
+1. part
+
+Java OOP part
+
+OOP prinsiplərindən istifadə edərək bir insan class"ı yaradılır. Bu class daxilində OOP nin əsas 4 prinsipi də istifadə
+olunmalıdır.
+Class dəyərləri bunlardır: name,surname,age,father,mother
+
+ - bir nece class yarada bilersiniz
+ - name, surname, age, gender, father, mother ve (write, read, sing, dance, run)
+ - Encapsulation  yaradan zaman exceptions istifade edeceksiniz.
+ - Main class-i icinde simple bir object yaradilmalidir
