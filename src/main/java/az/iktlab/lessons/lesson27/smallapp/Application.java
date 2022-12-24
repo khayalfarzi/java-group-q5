@@ -2,11 +2,11 @@ package az.iktlab.lessons.lesson27.smallapp;
 
 import az.iktlab.lessons.lesson27.smallapp.model.Commands;
 import az.iktlab.lessons.lesson27.smallapp.model.Person;
+import az.iktlab.lessons.lesson27.smallapp.model.User;
 import az.iktlab.lessons.lesson27.smallapp.service.PersonService;
 import az.iktlab.lessons.lesson27.smallapp.service.UserService;
 
-import static az.iktlab.lessons.lesson27.smallapp.util.ScannerUtil.getCommand;
-import static az.iktlab.lessons.lesson27.smallapp.util.ScannerUtil.getPersonData;
+import static az.iktlab.lessons.lesson27.smallapp.util.ScannerUtil.*;
 
 public class Application {
 
@@ -26,7 +26,9 @@ public class Application {
                     personService.savePerson(person);
                     break;
                 case RU:
-                    userService.registerUser();
+                    User user = getUserData();
+                    Long personId = getPersonId();
+                    userService.registerUser(user, personId);
                     break;
                 case SHP:
                     personService.showPeople();
@@ -38,11 +40,10 @@ public class Application {
     }
 
     private static void showCommands() {
-        System.out.print("Enter command: \n" +
-                " commands: \n" +
+        System.out.print("Commands: \n" +
                 "1. (sp)   - " + Commands.SP.getDescription() + "\n" +
                 "2. (ru)   - " + Commands.RU.getDescription() + "\n" +
                 "3. (shp)  - " + Commands.SHP.getDescription() + "\n" +
-                "4. (exit) - " + Commands.EXIT.getDescription() + "\n");
+                "4. (exit) - " + Commands.EXIT.getDescription() + "\n" + "Enter command: ");
     }
 }
